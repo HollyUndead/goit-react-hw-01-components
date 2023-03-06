@@ -1,0 +1,29 @@
+.transaction-history{
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+th{
+    width: 600px;
+    background-color: aqua;
+}
+
+td{
+    padding-left: 200px;
+    text-align: left;
+    height: 90px;
+}
+
+.amount{
+    text-align: right;
+    padding-left: 0;
+    padding-right: 200px;
+}
+
+tr:nth-child(odd) {
+    background-color: #C9E4F6;/* фон нечетных строк */
+}
+
+tr:nth-child(even) {
+    background-color: #B4DAF2;/* фон четных строк */
+}
