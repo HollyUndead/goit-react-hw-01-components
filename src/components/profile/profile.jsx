@@ -1,5 +1,6 @@
 import './profile.css'
-export const Profile = ({ username, tag, location, avatar, stats }) => {
+export const Profile = (props) => {
+  const { username, tag, location, avatar, stats } = props
   return (
     <div className="profile">
       <div className="description">

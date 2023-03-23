@@ -1,4 +1,5 @@
-export const TransactionsItem = ({ currency, type, amount }) => {
+export const TransactionsItem = (props) => {
+  const { currency, type, amount } = props
   return (
     <tr>
       <td>{type}</td>

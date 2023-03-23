@@ -1,4 +1,5 @@
-export const StatItem = ({ label, percentage, id }) => {
+export const StatItem = (props) => {
+  const { label, percentage, id } = props
   const className = "item id" + id
   return (
     <li className={className}>

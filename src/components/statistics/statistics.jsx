@@ -1,6 +1,7 @@
 import { StatItem } from './stat';
 import './statistic.css'
-export const Statistic = ({ stats }) => {
+export const Statistic = (props) => {
+  const { stats } = props
   let count = 0;
   return (
     <section className="statistics">

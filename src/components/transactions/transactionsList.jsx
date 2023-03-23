@@ -1,7 +1,8 @@
 import { TransactionsItem } from './transactionItem';
 import './transactions.css'
 
-export const TransactionsList = ({transactions}) => {
+export const TransactionsList = (props) => {
+  const {transactions} = props
   return (
     <table className="transaction-history">
       <thead>
