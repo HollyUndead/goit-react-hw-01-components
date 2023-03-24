@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { FrinedItem } from './friendItem';
 import './friendsList.css'
 
@@ -18,3 +19,7 @@ export const FriendsList = (props) => {
     </ul>
   );
 };
+
+FriendsList.propTypes = {
+  friends: PropTypes.array
+}

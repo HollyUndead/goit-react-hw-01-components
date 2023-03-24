@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { TransactionsItem } from './transactionItem';
 import './transactions.css'
 
@@ -28,3 +30,7 @@ export const TransactionsList = (props) => {
     </table>
   );
 };
+
+TransactionsList.propTypes = {
+  transactions: PropTypes.array
+}
