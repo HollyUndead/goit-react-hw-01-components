@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import { StatItem } from './stat-item';
 import './statistic.css'
 export const Statistic = (props) => {
-  const { stats } = props
+  const { stats, title } = props
   return (
     <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+      {title !== undefined ? (<h2 className="title">{title}</h2>) : <span></span>}
 
       <ul className="stat-list">
         {stats.map(el => {
@@ -20,5 +20,6 @@ export const Statistic = (props) => {
 };
 
 Statistic.propTypes = {
-  stats: PropTypes.array
+  stats: PropTypes.array,
+  title: PropTypes.string
 }
